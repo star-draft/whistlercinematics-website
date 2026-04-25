@@ -206,7 +206,7 @@ let images = [];
 let currentIndex = 0;
 
 /* -----------------------
-   LIGHTBOX HTML
+   LIGHTBOX
 ------------------------*/
 const lightbox = document.createElement("div");
 lightbox.id = "lightbox";
@@ -221,11 +221,24 @@ align-items:center;
 z-index:9999;
 `;
 
+/* Google Material Icons */
 lightbox.innerHTML = `
-<span id="closeBtn" style="position:absolute;top:20px;right:30px;font-size:40px;color:white;cursor:pointer;">&times;</span>
-<span id="prevBtn" style="position:absolute;left:20px;font-size:60px;color:white;cursor:pointer;user-select:none;">&#10094;</span>
+<span id="closeBtn" class="material-icons"
+style="position:absolute;top:20px;right:30px;font-size:40px;color:white;cursor:pointer;">
+close
+</span>
+
+<span id="prevBtn" class="material-icons"
+style="position:absolute;left:20px;font-size:60px;color:white;cursor:pointer;user-select:none;">
+keyboard_arrow_left
+</span>
+
 <img id="lightboxImg" style="max-width:90%;max-height:90%;border-radius:10px;">
-<span id="nextBtn" style="position:absolute;right:20px;font-size:60px;color:white;cursor:pointer;user-select:none;">&#10095;</span>
+
+<span id="nextBtn" class="material-icons"
+style="position:absolute;right:20px;font-size:60px;color:white;cursor:pointer;user-select:none;">
+keyboard_arrow_right
+</span>
 `;
 
 document.body.appendChild(lightbox);
@@ -236,7 +249,7 @@ const nextBtn = document.getElementById("nextBtn");
 const prevBtn = document.getElementById("prevBtn");
 
 /* -----------------------
-   LIGHTBOX FUNCTIONS
+   FUNCTIONS
 ------------------------*/
 function openLightbox(index) {
   currentIndex = index;
