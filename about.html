@@ -199,15 +199,46 @@ footer{background:#0a0a0a;border-top:1px solid rgba(42,42,42,.6)}
 <a href="contact.html" class="cta cta-primary">Contact Us</a>
 </section>
 </main>
-<footer><div class="footer-inner">
-<div class="l"><span class="logo sm"><img src="assets/icons/logo-icon.png" alt="Logo">
-    <div class="c">© 2026 Whistler Cinematics</div>
-<div class="r"><span class="socials">
-<a href="https://x.com/whistlercine" target="_blank" rel="noreferrer" aria-label="X"><img src="assets/icons/X.svg" alt="X">
-    <a href="https://instagram.com/whistlercinematics" target="_blank" rel="noreferrer" aria-label="Instagram"><img src="assets/icons/Instagram.svg" alt="Instagram">
-        <a href="https://youtube.com/@whistlercinematics" target="_blank" rel="noreferrer" aria-label="YouTube"><img src="assets/icons/YouTube.svg" alt="YouTube">
-        </span></div>
-</div></footer>
+<footer style="padding: 20px 0; border-top: 1px solid #ccc;">
+  <div class="footer-inner" style="
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 16px;
+    font-family: sans-serif;
+  ">
+
+    <!-- Left side -->
+    <div class="l" style="display: flex; align-items: center; gap: 12px;">
+      <span class="logo sm">
+        <img src="assets/brand-assests/logo-icon.png" alt="Logo" style="height: 32px;">
+      </span>
+      <div class="c">© 2026 Whistler Cinematics</div>
+    </div>
+
+    <!-- Right side -->
+    <div class="r">
+      <div class="socials" style="display: flex; gap: 16px;">
+
+        <a href="https://x.com/whistlercine" target="_blank">
+          <img src="assets/icons/X.svg" alt="X" style="width: 24px; height: 24px;">
+        </a>
+
+        <a href="https://instagram.com/whistlercinematics" target="_blank">
+          <img src="assets/icons/Instagram.svg" alt="Instagram" style="width: 24px; height: 24px;">
+        </a>
+
+        <a href="https://youtube.com/@whistlercinematics" target="_blank">
+          <img src="assets/icons/YouTube.svg" alt="YouTube" style="width: 24px; height: 24px;">
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
 </div>
 <script>
 document.getElementById("menuBtn")?.addEventListener("click",function(){document.getElementById("mobileMenu").classList.toggle("open")});
